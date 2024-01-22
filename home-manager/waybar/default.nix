@@ -18,9 +18,8 @@
              "2" = "";
              "3" = "";
              "4" = "󰙯";
-             "5" = "";
-             "9" = "󰓓";
-             "10" = "󰗃";
+             "5" = "󰓓";
+             "6" = "󰗃";
              "urgent" = "";
              "active" = "";
              "default" = "";
@@ -239,5 +238,88 @@
         }
       ";
   };
+
+  programs.wlogout = {
+    enable = true;
+    layout = [
+        {
+            label = "lock";
+            action = "swaylock";
+            keybind = "l";
+        }
+        {
+            label = "logout";
+            action = "wayland-logout";
+            keybind = "e";
+        }
+        {
+            label = "shutdown";
+            action = "systemctl poweroff";
+            keybind = "s";
+        }
+        {
+            label = "suspend";
+            action = "systemctl suspend";
+            keybind = "u";
+        }
+        {
+            label = "reboot";
+            action = "systemctl reboot";
+            keybind = "r";
+        }
+    ];
+    style = ''
+        * {
+            background-image: none;
+        }
+        window {
+            background-color: rgba(26, 26, 26, 0.6);
+        }
+        button {
+            background-color: #d79921;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            border: none;
+            outline: none;
+        }
+
+        button:focus, button:active, button:hover {
+            background-color: #98971a;
+        }
+
+        #lock {
+            background-image: image(url("./icons/lock.png"));
+            border-radius: 50px;
+            margin: 300px 20px;
+        }
+
+        #logout {
+            background-image: image(url("./icons/logout.png"));
+            border-radius: 50px;
+            margin: 300px 20px;
+        }
+
+        #suspend {
+            background-image: image(url("./icons/suspend.png"));
+            border-radius: 50px;
+            margin: 300px 20px;
+        }
+
+        #shutdown {
+            background-image: image(url("./icons/shutdown.png"));
+            border-radius: 50px;
+            margin: 300px 20px;
+        }
+
+        #reboot {
+            background-image: image(url("./icons/reboot.png"));
+            border-radius: 50px;
+            margin: 300px 20px;
+        }
+    '';
+  };
+
   home.file.".config/waybar/scripts/random-wall.sh".source = ./scripts/random-wall.sh;
+  home.file.".config/wlogout/icons".source = ./icons;
 }

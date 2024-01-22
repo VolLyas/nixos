@@ -87,9 +87,8 @@
         "workspace 2,class:^(jetbrains-idea-ce)$"
         "workspace 3,class:^(kitty)$"
         "workspace 4,class:^(discord)$"
-        "workspace 5,class:^(Telegram Desktop)$"
-        "workspace 9,class:^(steam)$"
-        "workspace 10,class:^(YouTube Music)$"
+        "workspace 5,class:^(steam)$"
+        "workspace 6,class:^(YouTube Music)$"
       ];
 
       windowrule = [
