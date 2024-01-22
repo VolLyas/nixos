@@ -63,7 +63,7 @@
         temperature = {
             "critical-threshold" = 80;
             format = "{temperatureC}°C {icon}";
-            format-icons = ["" "" ""];
+            format-icons = [""];
         };
         tray = {
             icon-size = 24;
