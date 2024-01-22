@@ -142,6 +142,7 @@
         #language {
             padding: 0 10px;
             font-size: 20px;
+            color: #262626;
         }
 
         .modules-left {
@@ -230,10 +231,11 @@
             font-weight: bold;
         }
         #custom-wlogout {
-            font-size: 26px;
+            font-size: 28px;
             background: #d79921;
             min-width: 40px;
             padding-right: 6px;
+            color: #262626;
         }
       ";
   };

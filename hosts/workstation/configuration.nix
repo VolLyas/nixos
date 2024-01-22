@@ -16,6 +16,7 @@
   networking.networkmanager.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.warn-dirty = false;
 
   time.timeZone = "Europe/Kyiv";
   i18n.defaultLocale = "en_US.UTF-8";

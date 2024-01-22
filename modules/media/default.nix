@@ -10,6 +10,7 @@ in {
             youtube-music
             obs-studio
             gnome.totem
+            krita
         ];
     };
 }

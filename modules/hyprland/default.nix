@@ -24,8 +24,7 @@ in {
             dunst
             libsForQt5.polkit-kde-agent
             libsForQt5.qt5ct
-            qt6Packages.qt6ct
-            qt6Packages.qtstyleplugin-kvantum
+            libsForQt5.qtstyleplugin-kvantum
             waybar
             swww
             xwaylandvideobridge

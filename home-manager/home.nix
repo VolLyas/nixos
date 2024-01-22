@@ -20,30 +20,31 @@
     QT_QPA_PLATFORMTHEME = "qt5ct";
   };
   
-#  gtk = {
-#    enable = true;
-#
-#    cursorTheme = {
-#      package = pkgs.bibata-cursors;
-#      name = "Bibata-Modern-Ice";
-#    };
-#
-#    theme = {
-#      package = pkgs.adw-gtk3;
-#      name = "adw-gtk3-dark";
-#    };
-#
-#    iconTheme = {
-#      package = pkgs.qogir-icon-theme;
-#      name = "Qogir-dark";
-#    };
-#  };
-#
-#  qt = {
-#    enable = true;
-#    # platformTheme = "gtk";
-#    style.name = "adwaita-dark";
-#  };
+  gtk = {
+    enable = true;
+
+    theme = {
+        package = pkgs.gruvbox-gtk-theme;
+        name = "Gruvbox-Dark-B";
+    };
+
+    iconTheme = {
+      package = pkgs.qogir-icon-theme;
+      name = "Qogir-dark";
+    };
+    cursorTheme = {
+      name = "Qogir";
+    };
+  };
+
+  qt = {
+    enable = true;
+  };
+
+  dconf = {
+    enable = true;
+    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+  };
 
   programs.home-manager.enable = true;
 }

@@ -19,6 +19,7 @@ in {
             neofetch
             jq
             dolphin
+            ark
         ];
 
         programs = {
