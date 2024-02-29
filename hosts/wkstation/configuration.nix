@@ -8,6 +8,7 @@
             ../../modules/dev-tools.nix
             ../../modules/gaming-tools.nix
             ../../modules/social.nix
+            ../../modules/multimedia.nix
         ];
 
     boot = {
