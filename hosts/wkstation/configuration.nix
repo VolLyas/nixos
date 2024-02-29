@@ -77,6 +77,7 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.polkit-kde-agent
     libsForQt5.bluedevil
+    libsForQt5.sddm-kcm 
     google-chrome
     firefox
     kate
