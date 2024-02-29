@@ -5,5 +5,6 @@
         discord
         brave
         telegram-desktop
+        thunderbird
     ];
 }
