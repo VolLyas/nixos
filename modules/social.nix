@@ -3,6 +3,7 @@
         google-chrome
         firefox
         discord
+        brave
         telegram-desktop
     ];
 }
