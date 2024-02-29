@@ -4,7 +4,7 @@
     imports =
         [ # Include the results of the hardware scan.
             ./hardware-configuration.nix
-            ../../modules/plasma5.nix
+            ../../modules/plasma6.nix
             ../../modules/dev-tools.nix
             ../../modules/gaming-tools.nix
             ../../modules/social.nix
@@ -51,7 +51,7 @@
         bluetooth = {
             enable = true; 
             powerOnBoot = true; 
-        }
+        };
     };
 
     security = {
