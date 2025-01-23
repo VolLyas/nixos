@@ -107,6 +107,7 @@
 	  protonplus
 	  git
 	  vscode
+    telegram-desktop
   ];
 
   programs.steam = {
