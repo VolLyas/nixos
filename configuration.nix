@@ -87,23 +87,26 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  programs.direnv.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    	gpclient
-    	gnomeExtensions.dash-to-dock
-    	gnomeExtensions.appindicator
-    	mpv
-    	signal-desktop
-	nextcloud-client
-	fragments
-	gnome-tweaks
-	adw-gtk3
-	mc
-	protonplus
-	git
+    gpclient
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.appindicator
+    mpv
+    signal-desktop
+	  nextcloud-client
+	  fragments
+	  gnome-tweaks
+	  adw-gtk3
+	  mc
+	  protonplus
+	  git
+	  vscode
   ];
 
   programs.steam = {
